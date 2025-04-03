@@ -8,8 +8,12 @@ function Contexto(props){
             </View>
 
             <View style={styles.contenedorTestimonio}>
-              <Text style={styles.ciudad}>{props.ciudad}</Text>
-              <Text style={styles.cargo}>{props.cargo}</Text>
+              <Text style={styles.nombre}> {props.nombre}
+                  <Text style= {styles.ciudad}> en {props.ciudad} </Text>
+             </Text>
+              <Text style={styles.cargo}>{props.cargo} en
+                 <Text style={styles.empresa}> {props.empresa}</Text>
+             </Text>
               <Text style={styles.testimonio}>{props.testimonio}</Text>
             </View>
         </View>
@@ -31,34 +35,43 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.39,
         shadowRadius: 8.30,
-        
         elevation: 13,
-        
-
     },
     imagenP:{
         height:250,
         width: '100%'
-
+    },
+    nombre:{
+        fontSize: 14,
+        color: 'black',
+        fontWeight: 'bold',
+        alignSelf: 'center',
+        marginBottom: 10,
+    },
+    empresa:{
+        fontSize: 14,
+        color: 'black',
+        fontWeight: 'bold',
     },
     ciudad:{
-        fontSize: 12,
-        marginTop: 50,
+        fontSize: 14,
         color: 'black',
         alignSelf: 'center',
-        fontWeight: 'bold',
-        
+        fontWeight: 'normal'
     },
     cargo:{
-        fontSize: 12,
-        marginBottom: 5,
+        fontSize: 14,
+        marginBottom: 20,
         color: 'black',
         alignSelf: 'center'
     },
     testimonio:{
-        fontSize: 12,
+        fontSize: 13,
         color: 'black',
         alignSelf: 'center',
+        textAlign: 'justify',
+        marginLeft: 10,
+        marginRight:10
     },
     imagenP:{
         height: 250,
@@ -68,14 +81,10 @@ const styles = StyleSheet.create({
     conteinerImagen: {
         flex: 1,
         alignSelf: 'center'
-        
-        
     },
     contenedorTestimonio: {
         flex: 2,
-        alignItems: 'center',
-        
+        alignSelf: 'center',
+        marginBottom: 30,
    },
-
-
 })
