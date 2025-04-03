@@ -11,15 +11,7 @@ export default function App() {
 
       <Text style={styles.titulo}> Esto es lo que nuestros alumnos dicen sobre freeCodeCamp: </Text>
 
-     <ScrollView style={styles.scrol}>  
-    
-     Trazabilidad del café 
-Implementación de la trazabilidad en la cadena de valor del café 
-Inteligencia artificial aplicada a la trazabilidad
-Buenas prácticas agrícolas
-Comercio justo y certificaciones de la industria
-
-
+     <ScrollView style={styles.scrol}> 
    <Testimonio
            imagenP = {require('./assets/Imagenes/chino.png')}
            ciudad = 'Wang Shawn en Singapur'

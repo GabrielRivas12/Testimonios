@@ -13,11 +13,7 @@ function Contexto(props){
               <Text style={styles.testimonio}>{props.testimonio}</Text>
             </View>
         </View>
-
     );
-        
-    
-
 }
 export default Contexto;
 
@@ -28,6 +24,16 @@ const styles = StyleSheet.create({
         minHeight:250,
         backgroundColor: '#fff',
         marginTop:15,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.39,
+        shadowRadius: 8.30,
+        
+        elevation: 13,
+        
 
     },
     imagenP:{
@@ -37,16 +43,17 @@ const styles = StyleSheet.create({
     },
     ciudad:{
         fontSize: 12,
-        marginTop: 20,
+        marginTop: 50,
         color: 'black',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        fontWeight: 'bold',
         
     },
     cargo:{
         fontSize: 12,
         marginBottom: 5,
         color: 'black',
-         alignSelf: 'center'
+        alignSelf: 'center'
     },
     testimonio:{
         fontSize: 12,
@@ -62,10 +69,12 @@ const styles = StyleSheet.create({
         flex: 1,
         alignSelf: 'center'
         
+        
     },
     contenedorTestimonio: {
         flex: 2,
-        alignItems: 'center'
+        alignItems: 'center',
+        
    },
 
 
